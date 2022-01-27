@@ -21,6 +21,13 @@
     grid-area: 1/1;
 }
 
+.product-item {
+    /*border-bottom: 1px solid black;*/
+    /*border-radius: 4px;*/
+   /* padding: 10px;*/
+    /*border-top: 1px solid black;*/
+}
+
 .product-item a:hover .product-overlay{
     opacity: 1;
 }
@@ -92,4 +99,112 @@
 .pagination .prev{
     background: #fff;
     color: #000;
+}
+
+/* FILTROS */
+
+.filtro,
+.filtro .widget{
+    margin-bottom: 40px;
+}
+
+.filtro-titulo,
+.filtro .widget{
+    font-size: 1.125rem;
+    color: rgba(0, 0, 0, .5);
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.filtro-preco input{
+    font-size: 1rem;
+    width: 80px;
+    border: none;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, .1);
+    padding: 5px;
+}
+
+.filtro-preco label{
+    width: 60px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.filtro-preco button{
+    font-size: 1rem;
+    width: 144px;
+    height: 36px;
+    border: none;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, .2);
+    padding: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 800px){
+    .filtros{
+        margin-top: 40px;
+        grid-row: 2;
+    }
+    .filtros::before{
+        content: 'Filtrar Resultados';
+        display: block;
+        background: black;
+        color: white;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+}
+
+.filtro-cat .sub-menu{
+    margin-bottom: 20px;
+}
+
+.filtro-cat a{
+    margin-bottom: 5px;
+    display: block;
+}
+
+.filtro-cat .sub-menu a::before{
+    content: '';
+    width: 10px;
+    height: 2px;
+    background: rgba(0,0,0,.5);
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.current-menu-item > a{
+    color: #208b10;
+}
+
+.woocommerce .woocommerce-widget-layered-nav-list
+.woocommerce-widget-layered-nav-list__item--chosen a::before{
+    content: '';
+    width: 10px;
+    display: inline-block;
+    background: transparent;
+    border: 2px solid black;
+    margin-right: 8px;
+}
+
+.woocommerce .woocommerce-widget-layered-nav-list
+.woocommerce-widget-layered-nav-list__item a::before{
+    background: black;
+}
+
+.count .woocommerce .woocommerce-widget-layered-nav-list{
+    display: none;
+}
+
+.woocommerce-ordering{
+    margin-bottom: 20px;
+    margin-left: auto;
+    float: none !important;
+}
+
+.woocommerce-ordering select{
+    font-size: 1rem;
 }

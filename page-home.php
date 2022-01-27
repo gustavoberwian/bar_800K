@@ -1,7 +1,7 @@
 <?php
 // Template name: Home
 get_header(); ?>
-    <pre>
+
 <?php
 
 $products_slide = wc_get_products([
