@@ -76,6 +76,10 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+    .products-list{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 40px;
+    }
 }
 
 /* Paginação */

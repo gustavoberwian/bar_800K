@@ -18,7 +18,7 @@ $cart_count = WC()->cart->get_cart_contents_count();
     <a href="./"><img class="logo" alt="Bar 800K Logo" src="<?= $img_url; ?>/logo.png" /></a>
     <div class="busca">
         <form action="<?php bloginfo('url'); ?>/loja/" method="get">
-            <input type="text" name="s" id="s" placeholder="Buscar no bar..." value="<?php the_search_query(); ?>">
+            <input type="text" name="s" id="s" placeholder="Buscar" value="<?php the_search_query(); ?>">
             <input type="text" name="post_type" value="product" class="hidden">
             <input type="submit" value="Buscar" id="searchbutton">
         </form>
